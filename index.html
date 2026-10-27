@@ -1,58 +1,152 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tecnologia em Foco</title>
+    <title>Dev na Prática</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Tecnologia em Foco</h1>
-        <p>Conheça o mundo da tecnologia</p>
+    <header class="topo">
+        <div class="logo">DEV+</div>
+
+        <div>
+            <p class="etiqueta">DIÁRIO DE ESTUDOS</p>
+            <h1>Dev na Prática</h1>
+            <p>Aprendendo tecnologia, uma linha de código por vez.</p>
+        </div>
     </header>
 
-    <nav>
+    <nav class="menu">
         <a href="#inicio">Início</a>
-        <a href="#programacao">Programação</a>
-        <a href="#dicas">Dicas</a>
+        <a href="#estudos">Meus estudos</a>
+        <a href="#anotacoes">Anotações</a>
     </nav>
 
     <main id="inicio">
 
-        <section id="programacao">
-            <h2>Desenvolvimento de Sistemas</h2>
-            <p>O desenvolvimento de sistemas permite criar sites, aplicativos e programas para facilitar tarefas do dia a dia.</p>
+        <section class="destaque">
+            <p class="etiqueta">CADERNO WEB</p>
 
-            <article>
-                <h3>O que é HTML?</h3>
-                <p>HTML é uma linguagem de marcação utilizada para organizar o conteúdo de páginas web.</p>
-                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">Aprenda HTML</a>
-            </article>
+            <h2>Do primeiro elemento<br>ao primeiro site.</h2>
 
-            <article>
-                <h3>Para que serve o CSS?</h3>
-                <p>O CSS é utilizado para personalizar as páginas, adicionando cores, bordas, tamanhos e espaçamentos.</p>
-                <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">Aprenda CSS</a>
-            </article>
+            <p>
+                Este espaço reúne algumas coisas que estou aprendendo
+                no desenvolvimento de sistemas, começando pela criação
+                de páginas para a internet.
+            </p>
+
+            <a class="link-destaque" href="#estudos">
+                Conhecer meus estudos 
+            </a>
         </section>
 
-        <section id="dicas">
-            <h2>Dicas para iniciantes</h2>
-            <p>Pratique programação, faça pequenos projetos e estude um pouco todos os dias.</p>
+        <section id="estudos" class="estudos">
+
+            <p class="etiqueta">O QUE ESTOU APRENDENDO</p>
+            <h2>Minha trilha de estudos</h2>
+
+            <article class="cartao">
+                <span class="numero">01</span>
+
+                <div>
+                    <h3>HTML: a estrutura</h3>
+
+                    <p>
+                        O HTML organiza o conteúdo de uma página,
+                        como títulos, textos, imagens e links.
+                        As tags semânticas ajudam a identificar
+                        a função de cada parte do site.
+                    </p>
+
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"
+                       target="_blank">
+                        Aprender HTML
+                    </a>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <span class="numero">02</span>
+
+                <div>
+                    <h3>CSS: a aparência</h3>
+
+                    <p>
+                        O CSS permite modificar cores, fontes,
+                        tamanhos, bordas e espaçamentos para
+                        organizar melhor uma página.
+                    </p>
+
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS"
+                       target="_blank">
+                        Aprender CSS
+                    </a>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <span class="numero">03</span>
+
+                <div>
+                    <h3>Praticar e desenvolver</h3>
+
+                    <p>
+                        Criar projetos pequenos ajuda a colocar
+                        os conhecimentos em prática, encontrar
+                        erros e aprender novas soluções.
+                    </p>
+
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Learn"
+                       target="_blank">
+                        Ver materiais de estudo
+                    </a>
+                </div>
+            </article>
+
+            <section id="anotacoes" class="anotacoes">
+                <h2>Uma anotação importante</h2>
+
+                <p>
+                    Não basta fazer uma página funcionar.
+                    Também é importante organizar o código,
+                    usar nomes claros e pensar em quem vai
+                    acessar o conteúdo.
+                </p>
+            </section>
+
         </section>
 
-        <aside>
-            <h2>Curiosidade</h2>
-            <p>HTML significa HyperText Markup Language, que em português significa Linguagem de Marcação de Hipertexto.</p>
+        <aside class="lateral">
+            <p class="etiqueta">VOCABULÁRIO DEV</p>
+
+            <h2>Você sabia?</h2>
+
+            <p>
+                Uma tag semântica ajuda a explicar o significado
+                do conteúdo. Por exemplo, a tag
+                <code>&lt;nav&gt;</code> identifica a navegação,
+                enquanto <code>&lt;footer&gt;</code> representa
+                o rodapé.
+            </p>
+
+            <div class="dica">
+                <strong>Dica de estudo</strong>
+
+                <p>
+                    Pratique criando páginas diferentes a cada
+                    novo assunto aprendido.
+                </p>
+            </div>
         </aside>
 
     </main>
 
     <footer>
-        <p>Projeto de HTML5 e CSS</p>
+        <p>DEV+ | Projeto de HTML5 e CSS</p>
+
+        <a href="#inicio">Voltar ao topo</a>
     </footer>
 
 </body>
